@@ -1,33 +1,3 @@
-# import numpy
-# n=int(input())
-# sovs=list(map(int, input().split()))
-
-# def partSov(n,dividand,sovs):
-#     sovList=numpy.zeros((dividand+1,n+1))
-#     counter=0
-#     for l in range(1,n+1):
-#         for m in range(1,dividand+1):
-#             sovList[l][m]=sovList[l][m-1]
-#             if m >=sovs[l]:
-#                 sovList[l][m]=max(sovs[l]+sovList[l-1][m-sovs[l]],sovList[l-1][m])
-#             else:
-#                 sovList[l][m]=sovList[l-1][m]
-#             if sovList[l][m]== dividand: counter+=1
-            
-        
-              
-#     return sovList
-
-# dividandSovs=sum(sovs)%3
-# if dividandSovs==0:
-#     dividandSovs=sum(sovs)//3
-#     print(partSov(n,dividandSovs,sovs))
-#     # if partSov(n,dividandSovs,sovs) >= 3:
-#     #     print(1)
-#     # else:
-#     #     print(0)
-# else:
-#     print(0)
 import numpy
 def partitions(W, n, items):
     """ Finds if number of partitions having capacity W is >=3
