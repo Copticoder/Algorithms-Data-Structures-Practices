@@ -1,4 +1,3 @@
-listBools=[]
 n= int(input())
 listStr= input()
 if '-' not in listStr:
